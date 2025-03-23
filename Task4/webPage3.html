@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Skills.com</title>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the description of my webpage.">
+    </head>
+    <style>
+            body {
+                margin: 0;
+                position: relative;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .blue-div {
+                width: 80%; 
+                height: 80vh;
+                background-color: rgb(72, 72, 228);
+                margin: 0;
+                position: relative; 
+            }
+            .white-div {
+                background-color: white;
+                width: 60%;
+                height: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                position: absolute; 
+                bottom: 0;
+                right: 0;
+                padding: 20px;
+                margin: 20px;
+                box-sizing: border-box; 
+
+            }
+            .imgs-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 180px;
+            }
+            .text-div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 10px; 
+                
+            }
+
+            .title-div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 220px;
+            
+            }
+            .title-div h2{
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            }
+            img {
+                width: 100px;
+                height: 100;
+            }
+            h1 {
+                color: aliceblue;
+                position: absolute; 
+                top: 20px; 
+                left: 20px; 
+                margin: 15px; 
+                font-weight: lighter;
+            }
+    </style>
+    <body>
+    <div class="blue-div">
+        <h1 style="color: aliceblue; right: 100px; top: 100px ">Skills</h1>
+        <div class="white-div">
+        <div class="imgs-div">
+        <img src="/imgaes/html.png" alt="html image">
+        <img src="/imgaes/java.png" alt="java image">
+        <img src="/imgaes/pascal.png" alt="pascal image">
+        </div>
+        <div class="title-div">
+            <h2>HTML</h2>
+            <h2>Java</h2>
+            <h2>Pascal</h2>
+        </div>
+          <div class="text-div">
+            <p>I have started with
+                HTML. I can create a simple website just like this one.</p>
+            <p>I'm learning Java from
+                ICT. social courses. I can create simple both console and form
+                applications and I can do object-oriented programming.</p>
+            <p>
+                They taught me Pascal in our school, but I prefer learning modern languages from ICT. social. </p>
+
+          </div>
+        </div>
+    </div>
+    </body>
+</html>
