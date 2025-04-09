@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise #1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the description of my webpage.">
+    <style>
+        .Head-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(46, 43, 43);
+            z-index: 1000;
+        }
+
+        li {
+            padding: 15px 20px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .LeftItem {
+            float: left;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .RightItem {
+            float: right;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 60px;
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            margin-right: 220px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card {
+            background-color: white;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            border: 2px solid rgb(46, 43, 43);
+        }
+
+        .card-title {
+            background-color: rgb(46, 43, 43);
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 15px;
+            flex-grow: 1;
+            overflow: auto;
+        }
+        .sidebar {
+            position: absolute;
+            top: 45px;
+            right: 0;
+            width: 200px;
+            bottom: 10px;
+            background-color: #181717;
+            padding: 10px;
+            color: #f4f4f4;
+            z-index: 0; 
+        }
+
+        h1, p {
+            margin-right: 220px;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="Head-nav">
+        <li class="RightItem"><a href="">Link 1</a></li>
+        <li class="RightItem"><a href="">Link 2</a></li>
+        <li class="RightItem"><a href="">Link 3</a></li>
+        <li class="LeftItem">My Website</li>
+    </ul>
+    <div class="sidebar">
+        Have you discovered all of the other excellent content on this website?
+    </div>
+    <h1>This is the main heading</h1>
+    <p>Eggies es bonus vobis, proinde vos postulo essum magis kohlrabi...</p>
+    <p>Gumbo beet greens com soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+         Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+
+    <div class="grid">
+        <div class="card">
+            <div class="card-title">Card one</div>
+            <div class="card-content">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado..</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">Card two</div>
+            <div class="card-content">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">Card three</div>
+            <div class="card-content">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">Card four</div>
+            <div class="card-content">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">Card five</div>
+            <div class="card-content">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</div>
+        </div>
+    </div>
+</body>
+</html>
