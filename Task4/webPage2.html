@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google.com</title>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the description of my webpage.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .Head-nav{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                position: fixed; /* stay on the top of the web page*/
+                top:0;
+                width: 100%;
+                height: auto;
+                z-index: 1000;
+                max-width: 100%;
+            }
+            .Foot-nav{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                bottom: 0;;
+                width: 100%;
+                height: auto;
+                background-color: rgb(227, 227, 227);
+                z-index: 1000;
+                max-width: 100%;
+            }  
+            li ,i{
+                display: inline-block;
+                width: 50px;
+                height: 30px;
+                padding: 15px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .LiftItem{
+                float: left;
+
+            }
+            .RightItem{
+                float: right;
+            }
+            .user-icon {
+                vertical-align: middle; 
+                width: 30px; 
+                height: 30px; 
+                border-radius: 50%; 
+            }
+            .bell-icon {
+                vertical-align: middle; 
+                width: 25px; 
+                height: 25px; 
+                border-radius: 50%; 
+            }
+        .google-container {
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                height: 100vh;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 10px;
+                max-width: 100%;
+                width: auto;
+            }
+            .google-img {
+                max-width: 100%; 
+                height: auto; 
+            }
+            .search{
+                width:500px; 
+                height: 35px;
+                
+
+            }
+            .button-div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 10px;
+            }
+            .btn{
+               height: 40px;
+               border: none;
+               color: black;
+               padding: 5px;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+                  <!-- Nav Bar -->
+      <ul class="Head-nav">
+        <li class="LiftItem"><a href="">About</a></li>
+        <li class="LiftItem"><a href="">Store</a></li>
+        <li class="RightItem">
+            <img src="./imgaes/User_Img.jpg" alt="User Image" class="user-icon">
+        </li>
+        <li class="RightItem">
+            <img src="./imgaes/bell.png" alt="Bell Image" class="bell-icon">
+        </li>
+        <i class="fa fa-th RightItem"  style="font-size:22px;color:rgb(53, 49, 49); vertical-align: middle"></i>
+        <li class="RightItem" ><a href="">Images</a></li>
+        <li class="RightItem"><a href="">Gmail</a></li>
+      </ul>
+                <!--google Part-->  
+     <div class="google-container">
+        <img src="/imgaes/google.png" alt="Google Image" class="google-img">
+        <input type="search" class="search">
+        <div class="button-div">
+            <input type="button" value="Google Search" class="btn">
+            <input type="button" value="I'm Feeling Lucky" class="btn">
+        </div>
+     </div>
+      <!--Footer Nav-->
+      <ul class="Foot-nav">
+        <li class="LiftItem"><a href="">Advertising  </a></li>
+        <li class="LiftItem"><a href="">Business</a></li>
+        <li class="RightItem"> <a href="">Privacy</a></li>
+        <li class="RightItem"> <a href="">Terms</a></li>
+        <li class="RightItem"> <a href="">Settings</a></li>
+      </ul>
+    
+    </body>
+</html>

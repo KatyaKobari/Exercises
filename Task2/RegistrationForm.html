@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise #1</title>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the description of my webpage.">
+        <style>
+           form div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            form label {
+                width: 100px;
+                margin-right: 10px;
+            }
+            form input[type="submit"] {
+                margin-left: 100px;
+               
+            }
+        </style>
+    </head>
+    <body>
+      <h1>Registration Form</h1>
+      <form>
+        <div>
+         <label for="id">User id:</label>
+         <input type="text" id="id" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+           </div>
+           <br>
+           <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+           </div>
+           <br>
+           <div>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" required>
+           </div>
+           <br>
+           <div>
+            <label for="Country">Country:</label>
+            <select name="Country" id="Country">
+            <option value="">(Please select a Country)</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Jorden">Jorden</option>
+           </select>
+           </div>
+           <br>
+           <div>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" required>
+           </div>
+           <br>
+           <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+           </div>
+           <br>
+           <div>
+            <label>Sex:</label>
+            <input type="radio" name="sex" value="Male" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="sex" value="Female" id="Female">
+            <label for="Female">Female</label>
+           </div>
+           <br>
+           <div>
+            <label>Language:</label>
+            <input type="checkbox" name="lang" value="English" id="English">
+            <label for="English">English</label>
+            <input type="checkbox" name="lang" value="NonEnglish" id="NonEnglish">
+            <label for="NonEnglish">Non English</label>
+           </div>
+           <br>
+           <div>
+            <label for="about">About:</label>
+            <textarea name="about" id="about"> </textarea>
+           </div>
+           <br>
+           <div>
+            <input type="submit">
+           </div>
+      </form>
+    </body>
+</html>
